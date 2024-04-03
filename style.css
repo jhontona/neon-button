@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'Neon';
+	src: url('NEON_GLOW-Bold.otf') format('opentype');
+}
+
+.boton-neon {
+    display: inline-block;
+    padding: 10px 20px;
+	font-family: 'Neon', sans-serif;
+    font-size: 32px;
+    background-color: #000;
+    color: #fff;
+    border: 3px solid #00fafa;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    animation: animate 1s linear infinite;
+    transition: color 0.3s ease;
+}
+
+.boton-neon:hover {
+    box-shadow: none;
+    color: #00fafa;
+}
+
+@keyframes animate {
+    0% {
+      	filter: hue-rotate(0deg);
+    }
+    100% {
+      	filter: hue-rotate(360deg);
+    }
+}
